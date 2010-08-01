@@ -26,7 +26,12 @@ module DateParser
           break
         end
       end
-      ::Date.parse(string.to_s) rescue nil
+      
+      if string.is_a? ::Date
+        string
+      else
+        ::Date.parse(string.to_s) rescue nil
+      end
     end
   end
 

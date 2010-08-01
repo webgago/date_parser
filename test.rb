@@ -14,7 +14,6 @@ class DateParserTest < Test::Unit::TestCase
       :from_to_word => "с 20 августа по 25 августа в Санкт-Петербурге пройдет семинар слонов",
       :this_weekend => "пойду в кино в эти выходные",
       :next_weekend => "пойду в кафе на следующих выходных",
-      :tomorrow => "завтра иду в кино на матрицу",
     }
     @parser = DateParser::Parser.new
   end
